@@ -1,3 +1,6 @@
+Here is the updated code to ensure the button does not extend across the entire page and includes a plus sign at the beginning:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,10 +57,9 @@
             font-size: 20px;
         }
         .submit-btn {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
             border: none;
             background: #ED1C24;
             color: white;
@@ -65,9 +67,15 @@
             font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
+            white-space: nowrap;
         }
         .submit-btn:hover {
             background: #d3141a;
+        }
+        .submit-btn::before {
+            content: "+";
+            margin-right: 10px;
+            font-size: 20px;
         }
         label {
             display: block;
@@ -120,3 +128,6 @@
     </script>
 </body>
 </html>
+```
+
+This code ensures the button has a plus sign at the beginning and doesn't extend across the entire page. The button also aligns properly and retains the specified styles.
