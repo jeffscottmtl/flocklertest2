@@ -69,10 +69,19 @@
         .submit-btn:hover {
             background: #d3141a;
         }
-        .submit-btn::before {
-            content: "+";
-            margin-right: 10px;
+       .submit-btn::before {
+            content: "\002B";
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            border: 2px solid white; /* Change to make square transparent */
+            color: white;
             font-size: 20px;
+            border-radius: 4px;
+            margin-right: 10px;
+            background: transparent; /* Make background transparent */
         }
         label {
             display: block;
