@@ -10,8 +10,6 @@
     <meta property="og:description" content="A webpage with a social wall and form.">
     <link rel="icon" href="https://raw.githubusercontent.com/jeffscottmtl/flocklertest2/main/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -55,22 +53,17 @@
             cursor: pointer;
             float: right;
             font-size: 20px;
-       .submit-btn {
-        display: inline-flex;
-        align-items: center;
-        padding: 10px 20px;
-        background: #ED1C24;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
         }
-        .submit-btn i {
-            margin-right: 8px;
-            font-size: 18px;
+        .submit-btn {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: #ED1C24;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
         }
         .submit-btn:hover {
             background: #d3141a;
@@ -92,9 +85,12 @@
     <header class="banner"></header>
 
     <main class="content">
+        <h1>Welcome to Rail Safety Week 2024</h1>
+        <h2>Bienvenue à la Semaine de la sécurité ferroviaire 2024</h2>
+
         <!-- Button to open the form -->
-        <button id="openFormBtn" class="submit-btn"><i class="fa fa-plus"></i> Add a post / Ajouter un message</button>
-        
+        <button id="openFormBtn" class="submit-btn">Submit a New Post</button>
+
         <!-- Form container -->
         <div id="formContainer" class="form-container" role="dialog" aria-labelledby="formTitle" aria-hidden="true">
             <div class="form-popup">
