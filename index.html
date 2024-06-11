@@ -69,19 +69,17 @@
         .submit-btn:hover {
             background: #d3141a;
         }
-       .submit-btn::before {
+        .submit-btn::before {
             content: "\002B";
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: 24px;
-            height: 24px;
-            border: 2px solid white; /* Change to make square transparent */
+            width: 16px;
+            height: 16px;
+            border: 1px solid white;
             color: white;
-            font-size: 20px;
-            border-radius: 4px;
+            font-size: 16px; /* Set to the same font size as the text */
             margin-right: 10px;
-            background: transparent; /* Make background transparent */
         }
         label {
             display: block;
@@ -108,7 +106,7 @@
         <div id="formContainer" class="form-container" role="dialog" aria-labelledby="formTitle" aria-hidden="true">
             <div class="form-popup">
                 <button id="closeFormBtn" class="close-btn" aria-label="Close">&times;</button>
-                <h2 id="formTitle">Share a message | Partager un message</h2>
+                <h2 id="formTitle">Submit a New Post</h2>
                 <!-- Flockler Review Widget -->
                 <div class="flockler-review-form" data-site-uuid="19003a7aa9e05ff667bf1e07248b6f4e" data-form-uuid="01j01tgk2y0tmx9dmxy2pnpnwp"></div>
                 <script src="https://plugins.flockler.com/reviews/embed.js" async></script>
