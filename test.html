@@ -17,12 +17,12 @@
         }
         .banner {
             width: 100%;
-            height: auto;
+            height: 100vh; /* Make banner full height of viewport */
             background-image: url('https://raw.githubusercontent.com/jeffscottmtl/flocklertest2/main/banner.png');
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding-bottom: 56.25%; /* Maintain aspect ratio */
+            margin: 0; /* Remove any margin around the banner */
         }
         .content {
             padding: 20px;
@@ -79,7 +79,7 @@
             height: 16px;
             border: 1px solid white;
             color: white;
-            font-size: 16px;
+            font-size: 16px; /* Set to the same font size as the text */
             margin-right: 10px;
         }
         label {
